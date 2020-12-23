@@ -1,0 +1,49 @@
+{
+	"Rank" : "1",
+	"Name" : "Bitcoin",
+	"Total Supply" : "21M",
+	"Consensus" : "PoW",
+	"Ticker" : "BTC"
+}
+{
+	"Rank" : "2",
+	"Name" : "Ethereum",
+	"Total Supply" : "144M",
+	"Consensus" : "PoW",
+	"Ticker" : "ETH"
+}
+{
+	"Rank" : "3",
+	"Name" : "Tether",
+	"Total Supply" : "No Limit",
+	"Consensus" : "No",
+	"Ticker" : "USDT"
+}
+{
+	"Rank" : "4",
+	"Name" : "Ripple",
+	"Total Supply" : "90B",
+	"Consensus" : "No",
+	"Ticker" : "XRP"
+}
+{
+	"Rank" : "5",
+	"Name" : "Litecoin",
+	"Total Supply" : "210M",
+	"Consensus" : "PoW",
+	"Ticker" : "LTC"
+}
+{
+	"Rank" : "6",
+	"Name" : "Bitcoin Cash",
+	"Total Supply" : "21M",
+	"Consensus" : "PoW",
+	"Ticker" : "BCH"
+}
+{
+	"Rank" : "7",
+	"Name" : "Chainlink",
+	"Total Supply" : "1B",
+	"Consensus" : "PoS",
+	"Ticker" : "LINK"
+}

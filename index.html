@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html ng-app=CryptApp>
+
+  <head>
+    <script data-require="angular.js@1.2.0-rc3" data-semver="1.2.0-rc3" src="http://code.angularjs.org/1.2.0-rc.3/angular.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+
+  <body ng-controller="cCtrl">      
+    <table>
+        <tr>
+            <td align="right">Search :</td>
+            <td><input ng-model="query[queryBy]" /></td>
+        </tr>           
+        <tr>
+            <td align="right">Search By :</td>
+            <td>
+                <select ng-model="queryBy">
+                    <option value="$"></option>
+                    <option value="rank">RANK</option>
+                    <option value="name">NAME</option>
+                    <option value="totals">TOTAL SUPPLY</option>
+					<option value="consensus">CONSENSUS</option>
+                    <option value="ticker">TICKER</option>
+                </select>   
+            </td>
+        </tr>
+    </table>
+    <hr>
+    <div>
+        <table>
+            <tr>
+                <th>Rank</th>
+                <th>Name</th>
+                <th>Total Supply</th>
+                <th>Consensus</th>
+                <th>Ticker</th>
+            </tr>
+            <tr ng-repeat="c in cdata | filter:query">
+                <td>{{c.rank}}</td>
+                <td>{{c.name}}</td>
+                <td>{{c.totals}}</td>
+                <td>{{c.consensus}}</td>
+                <td>{{c.ticker}}</td>
+            </tr>
+        </table>
+    </div>
+  </body>
+
+</html>
